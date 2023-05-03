@@ -1,0 +1,133 @@
+@keyframes curtainRoll {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-100vw);
+    }
+}
+
+.curtain {
+    animation-name: curtainRoll;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes roomDim {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 0.8;
+    }
+}
+
+.lights {
+    animation-name: roomDim;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mirrorDown {
+    from {
+        transform: translateY(-100vh);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.set {
+    animation-name: mirrorDown;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.oblong1 {
+    animation-name: mirrorDown;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mirrorOp {
+    0%, 20%, 50%, 60%, 80%
+    {opacity: 0;}
+    90% {opacity: 0.9;}
+    100% {opacity: 1;}
+}
+ 
+.oblong2 {
+    animation-name: mirrorOp;
+    animation-duration: 6s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+}
+
+@keyframes animStar {
+    from {
+      transform: rotate(0);
+      transform-origin: center;
+    }
+    to {
+      transform: rotate(360deg);
+      transform-origin: center;
+    }
+  }
+
+.milk {
+    animation: milky1 10s infinite linear;
+}
+
+.milkyway {
+    animation: milky2 30s infinite ease-in-out;
+}
+
+@keyframes milky1 {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
+@keyframes milky2 {
+    from {transform: rotatex(0deg);}
+    to {transform: rotatex(360deg);}
+}
+
+.description1 {
+    animation-name: slideLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+.description2 {
+    animation-name: slideRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+}
+
+
+@keyframes slideLeft {
+    from {transform: translateX(0px);}
+    to {transform: translateX(700px);}
+}
+
+@keyframes slideRight {
+    from {transform: translateX(0px);}
+    to {transform: translateX(-535px);}
+}
